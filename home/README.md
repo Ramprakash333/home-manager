@@ -1,7 +1,7 @@
 ## My Nix Flake home-manager setup
 ### Install home-manager using nix flake
 ```
-nix run
+nix run home-manager/master -- init
 ```
 
 ### To install packages
