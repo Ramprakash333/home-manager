@@ -6,6 +6,7 @@
         ./git.nix
         ./starShip.nix
         ./zsh.nix
+        ./lazygit.nix
     ];
     nix.gc = {
         automatic = true;
@@ -17,6 +18,8 @@
             enable = true;
             nix-direnv.enable = true;
         };
+        fzf.enable = true;
+        bat.enable = true;
+        btop.enable = true;
     };
-    home.packages = with pkgs; [htop];
 }
